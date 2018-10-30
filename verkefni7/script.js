@@ -2,6 +2,7 @@
  * Verkefni 7 – Reikniæfingarforrit
  *
  * Forrit sem æfir hraða í að reikna einföld dæmi
+ */
 
 // fasti sem segir til um hve marga leiki eigi að spila
 const GAMES_TO_PLAY = 10;
@@ -118,9 +119,7 @@ function ask() {
   }
   
   var notendasvar = prompt('Hvað er: ' + tala1 + formerki + tala2);
-  
   if (notendasvar || notendasvar == '') {
-  
     if (notendasvar == eval(tala1+formerki+tala2)){
       return true;
     }
@@ -140,7 +139,7 @@ function randomNumber(min, max) {
 }
 
 // Byrjar leik
-do {
+do{
   var stig = 0;
   start();
   play();
